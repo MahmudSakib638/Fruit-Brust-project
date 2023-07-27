@@ -21,7 +21,7 @@
           theme: {
             extend: {
               colors: {
-                'body-color':'#FFF',
+                'body-color':'#FFFFFF',
                 'head-color': '#F85559',
                 'footer-color': '#121212;',
                 
@@ -32,7 +32,7 @@
       </script>
 </head>
 <body class="font-lato container mx-auto bg-body-color">
-   <header class="mx-2 my-12 lg:mx-36">
+   <header class="mx-2 my-12 lg:mx-36 bg-white">
     <div class="navbar bg-base-100 bg-head-color rounded-full h-20">
         <div class="flex-1 text-base text-white">
           <a class="btn btn-ghost normal-case text-xl">Home</a>
@@ -46,7 +46,7 @@
           </div>
         <div class="flex-none gap-2">
           <div class="form-control pr-5">
-            <div class="input-group rounded-full overflow-hidden">
+            <div class="input-group rounded-full bg-red-500 overflow-hidden">
                 <input type="text" placeholder="Search here" class="input input-bordered" />
                 <button class="btn btn-square">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -66,10 +66,10 @@
   <div class="hero-overlay bg-opacity-50"></div>
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your 
+      <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your 
     doorstep</h1>
       <p class="mb-5">We supply highly quality organic products.</p>
-      <button class="btn btn-ghost bg-head-color">Shop Now</button>
+      <button class="btn btn-ghost text-white bg-head-color">Shop Now</button>
     </div>
   </div>
 </div>
@@ -144,7 +144,7 @@
     <section class="mx-2 lg:mx-36">
         <div class="flex w-full my-10 mt-48 mb-12">
             <div class="grid h-20 flex-grow card bg-white rounded-box place-items-start">
-                <h1 class="text-5xl font-extrabold">
+                <h1 class="text-5xl font-extrabold text-black">
                     Deal of the day
 
                 </h1>
@@ -152,43 +152,39 @@
                     Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             
-            <div class="grid h-20 flex-grow card bg-white rounded-box place-items-end">
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:15;"></span>
-                          </span>
-                          days
-                        </div> 
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:10;"></span>
-                          </span>
-                          hours
-                        </div> 
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:24;"></span>
-                          </span>
-                          min
-                        </div> 
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:49;"></span>
-                          </span>
-                          sec
-                        </div>
-                      </div>
-                  </div>
-            </div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown text-black font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown text-black font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown text-black font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown text-black font-mono text-5xl">
+                    <span style="--value:32;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
           </div>
 
     </section>
 <!-- card section 2 -->
     <section class="mx-2 lg:mx-36 my-20">
         <div class="flex gap-5">
-            <div class="card w-96 bg-base-100 shadow">
+            <div class="card w-96 bg-white shadow">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit6.png" />
                 </figure>
@@ -206,10 +202,10 @@
                   <div class="card-actions">
 <!-- Open the modal using ID.showModal() method -->
                         <button class="btn bg-transparent border-0 text-head-color " onclick="my_modal_1.showModal()">Details</button>
-                        <dialog id="my_modal_1" class="modal">
-                        <form method="dialog" class="modal-box">
+                        <dialog id="my_modal_1" class="modal ">
+                        <form method="dialog" class="modal-box bg-white">
                         
-                        <div class="card w-96 bg-none shadow-none pt-16 pl-16">
+                        <div class="card w-96 bg-white shadow-none pt-16 pl-16">
                             <figure><img src="./images/fruit6.png" alt="" /></figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title">Apples</h2>
@@ -236,7 +232,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card w-96 bg-base-100 shadow">
+              <div class="card w-96 bg-white shadow">
                 <figure class="px-10 pt-8">
                   <img src="./images/fruit7.png" />
                 </figure>
@@ -255,9 +251,9 @@
                     <!-- Open the modal using ID.showModal() method -->
                                             <button class="btn bg-transparent border-0 text-head-color " onclick="my_modal_2.showModal()">Details</button>
                                             <dialog id="my_modal_2" class="modal">
-                                            <form method="dialog" class="modal-box">
+                                            <form method="dialog" class="modal-box bg-white">
                                             
-                                            <div class="card w-96 bg-none shadow-none pt-16 pl-16">
+                                            <div class="card w-96 bg-white shadow-none pt-16 pl-16">
                                                 <figure><img src="./images/fruit7.png" alt="" /></figure>
                                                 <div class="card-body items-center text-center">
                                                   <h2 class="card-title">Orange</h2>
@@ -284,7 +280,7 @@
                                       </div>
                 </div>
               </div>
-              <div class="card w-96 bg-base-100 shadow">
+              <div class="card w-96 bg-white shadow">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit8.png" />
                 </figure>
@@ -303,9 +299,9 @@
                     <!-- Open the modal using ID.showModal() method -->
                                             <button class="btn bg-transparent border-0 text-head-color " onclick="my_modal_3.showModal()">Details</button>
                                             <dialog id="my_modal_3" class="modal">
-                                            <form method="dialog" class="modal-box">
+                                            <form method="dialog" class="modal-box bg-white">
                                             
-                                            <div class="card w-96 bg-none shadow-none pt-16 pl-16">
+                                            <div class="card w-96 bg-white shadow-none pt-16 pl-16">
                                                 <figure><img src="./images/fruit8.png" alt="" /></figure>
                                                 <div class="card-body items-center text-center">
                                                   <h2 class="card-title">Red Dragon</h2>
@@ -332,7 +328,7 @@
                                       </div>
                 </div>
               </div>
-              <div class="card w-96 bg-base-100 shadow">
+              <div class="card w-96 bg-white shadow">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit9.png" />
                 </figure>
@@ -351,9 +347,9 @@
                     <!-- Open the modal using ID.showModal() method -->
                                             <button class="btn bg-transparent border-0 text-head-color " onclick="my_modal_4.showModal()">Details</button>
                                             <dialog id="my_modal_4" class="modal">
-                                            <form method="dialog" class="modal-box">
+                                            <form method="dialog" class="modal-box bg-white">
                                             
-                                            <div class="card w-96 bg-none shadow-none pt-16 pl-16">
+                                            <div class="card w-96 bg-white shadow-none pt-16 pl-16">
                                                 <figure><img src="./images/fruit9.png" alt="" /></figure>
                                                 <div class="card-body items-center text-center">
                                                   <h2 class="card-title">Banana</h2>
@@ -385,7 +381,7 @@
 
         </div>
         <div class="flex justify-center my-6 text-white">
-            <button class="btn bg-head-color">Shop All</button>
+            <button class="btn bg-head-color text-white border-0">Shop All</button>
         </div>
     </section>
 <!-- team section -->
@@ -394,7 +390,7 @@
             <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                   <div>
-                    <h1 class="mb-5 text-4xl font-bold">Meet the team Sction</h1>
+                    <h1 class="mb-5 text-4xl text-white font-bold">Meet the team Sction</h1>
                      <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br/> 
                       Latin literature from 45 BC, making it over 2000 years old..</p>
                       
@@ -598,7 +594,7 @@
 <!-- why choose us section -->
     <section class="mx-2 lg:mx-36 my-20">
         <div class="text-center mt-16 mb-10">
-            <h1 class="mb-5 text-4xl font-bold">
+            <h1 class="mb-5 text-4xl font-bold text-black">
                 Why choose Us
             </h1>
             <p class="text-sm pt-3 text-slate-500">
